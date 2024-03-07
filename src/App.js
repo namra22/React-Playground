@@ -14,6 +14,8 @@ import TabTest from './tabs/TabsTest';
 import Modal from './customModalPopup/Modal';
 import GithubProfileFinder from './githubProfileFinder/GithubProfileFinder';
 import SearchAutoComplete from './searchAutoComplete/SearchautoComplete';
+import FeatureFlagGlobalState from './feature-flag/context/index';
+import FeatureFlags from './feature-flag/index';
 function App() {
   return (
     <div>
@@ -29,8 +31,11 @@ function App() {
       <ScrollIndicator url={'https://dummyjson.com/products?limit=100'} />
       <TabTest />
       <Modal />
-      <GithubProfileFinder /> */}
-      <SearchAutoComplete />
+      <GithubProfileFinder />
+      <SearchAutoComplete /> */}
+      <FeatureFlagGlobalState >
+        <FeatureFlags />
+      </FeatureFlagGlobalState>
     </div>
   );
 }
