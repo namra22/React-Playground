@@ -7,7 +7,7 @@ A collection of small React projects that showcase various components and functi
 -Components
 -Props
 -State
--Hooks (useState, useEffect)
+-Hooks (useState, useEffect,useContext)
 **Component Creation:**
 Creation of functional components in React.
 
@@ -194,6 +194,12 @@ The Menu component is a functional React UI element that provides a simple and o
     - Folder: `searchAutoComplete`
     - Files: `SearchAutoComplete.js`, `Suggestion.js`
     - Description: Components for a search autocomplete feature. SearchAutoComplete component needs Suggested list to autoccomplete the Search result user is looking for.
+15. ### Feature Flags
+    - Folder: `feature-flag,Context`
+    - Files: `index.js`
+    - Description: The FeatureFlags component dynamically renders different features based on feature flags fetched from the data.js. It utilizes the FeatureFlagContext to check the 
+      status of each feature and conditionally renders the corresponding component.The FeatureFlagGlobalState component sets up the global context (FeatureFlagContext) and fetches 
+      feature flags from the data.js using featureFlagDataServiceCall. It provides the pending and enabled values to its children through the context.
 
 ## Usage
 
